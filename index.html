@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="news.css">
+    <script src="https://kit.fontawesome.com/5d654a19d2.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flex">
+          
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="vichar.jpg" alt="logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="sports" onclick="onnavitemclick('sports')">Sports</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onnavitemclick('politics')">Politics</li>
+                    <li class="hover-link nav-item" id="entertainment" onclick="onnavitemclick('entertainment')">
+                        Entertainment</li>
+                    <li class="hover-link nav-item" id="bollywood" onclick="onnavitemclick('bollywood')">Bollywood</li>
+                    <li class="hover-link nav-item" id="technology" onclick="onnavitemclick('technology')">Technology
+                    </li>
+                    <li class="hover-link nav-item" id="international" onclick="onnavitemclick('international')">
+                        International</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" class="news-input" id="search-txt" placeholder="e.g. science">
+                <button class="search-btn" id="search-btn">Search</button>
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" >
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+        </div>
+    </nav>
+    <main>
+        <div class="cards-container container flex " id="card-container">
+
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="cards">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is The title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+                    ipsum
+                    necessitatibus praesentium sequi unde sed perspiciatis quae a labore dolorum!</p>
+            </div>
+        </div>
+    </template>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="vichar1.png" alt="logo" class="logo">
+                <p>Stay updated with the world's latest news on our user-friendly website. Explore diverse topics,
+                    engage with us on social media, and subscribe to our newsletter for curated highlights. Trust us as
+                    your reliable source for accurate and timely information. Your journey to informed living starts
+                    here at "Vichar Vimarsh".</p>
+            </div>
+            <div class="col">
+                <h3>Office <div class="underline"><span></span></div></h3>
+                <p>Anasr Mohalla,Nirsa</p>
+                <p>Dhanbad,Jharkhand</p>
+                <p>828205 India</p>
+                <p class="email-id">sishahmad@gmail.com</p>
+                <h4>+91 -7367874900</h4>
+            </div>
+            <div class="col col3">
+                <h3>Links <div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>News letter <div class="underline"><span></span></div></h3> 
+                <form>
+                    <i class="fa-regular fa-envelope far"></i>
+                    <input type="email" placeholder="Enter your email id">
+                    <button type="submit"><i class="fa-solid fa-arrow-right fas"></i></button>
+                </form>
+                <div class="social-icon">
+                    <i class="fa-brands fa-facebook fab"></i>
+                    <i class="fa-brands fa-facebook-messenger fab"></i>
+                    <i class="fa-brands fa-square-twitter fab"></i>
+                    <i class="fa-brands fa-square-instagram fab"></i>
+                    <i class="fa-brands fa-square-whatsapp fab"></i>
+                  
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Vichar Vimarsh &#169 2024 - All Right Reserved </p>
+    </footer>
+    <script src="news_script.js"  type="module"></script>
+</body>
+
+</html>
